@@ -18,4 +18,11 @@ class MyBatisSourceTests {
         System.out.println(userEntity);
     }
 
+    @Test
+    void insertTest() {
+        for (int i = 30; i < 40; i++) {
+            userMapper.insertSelective(new UserEntity(i, "name" + i));
+        }
+    }
+
 }

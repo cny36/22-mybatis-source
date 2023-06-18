@@ -19,6 +19,10 @@
     from t_user where id = #{id}
   </select>
 
+  <insert id="insertUser" parameterType="com.cny.mybatissource.entity.UserEntity">
+    insert into t_user (id, `name`) values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR})
+  </insert>
+
 
 
 

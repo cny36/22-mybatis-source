@@ -16,4 +16,6 @@ public interface UserMapper {
     int updateByPrimaryKey(UserEntity record);
 
     UserEntity selectById(Integer id);
+
+    int insertUser(UserEntity entity);
 }
