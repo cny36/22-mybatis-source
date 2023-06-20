@@ -23,6 +23,7 @@ dependencies {
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
     implementation 'org.springframework:spring-jdbc:5.2.12.RELEASE'
     implementation 'com.mysql:mysql-connector-j:8.0.33'
+    //implementation 'com.github.pagehelper:pagehelper:3.7.6'
 
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
