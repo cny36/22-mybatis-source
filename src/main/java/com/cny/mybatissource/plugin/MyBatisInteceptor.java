@@ -28,6 +28,7 @@ import java.sql.Connection;
 
 /**
  * Mybatis 实现自定义插件
+ * 对 @NeedInterceptor 的方法拦截，修改表名称
  *
  * @author : chennengyuan
  */
