@@ -26,4 +26,11 @@ public class UserController {
             userMapper.insertSelective(new UserEntity(i, "name" + i));
         }
     }
+
+
+    @GetMapping("/get")
+    public void getUser(){
+        UserEntity userEntity = userMapper.selectById(1);
+        System.out.println(userEntity);
+    }
 }

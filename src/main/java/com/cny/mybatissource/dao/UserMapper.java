@@ -1,5 +1,6 @@
 package com.cny.mybatissource.dao;
 
+import com.cny.mybatissource.annotation.NeedInterceptor;
 import com.cny.mybatissource.entity.UserEntity;
 
 public interface UserMapper {
@@ -15,7 +16,11 @@ public interface UserMapper {
 
     int updateByPrimaryKey(UserEntity record);
 
+
+    @NeedInterceptor(originalTableName = "t_user", newTableName = "t_user_cmp")
     UserEntity selectById(Integer id);
+
+    UserEntity selectById222(Integer id);
 
     int insertUser(UserEntity entity);
 }

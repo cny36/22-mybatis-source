@@ -19,6 +19,12 @@
     from t_user where id = #{id}
   </select>
 
+
+  <select id="selectById222" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/>
+    from t_user where id = #{id}
+  </select>
+
   <insert id="insertUser" parameterType="com.cny.mybatissource.entity.UserEntity">
     insert into t_user (id, `name`) values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR})
   </insert>
